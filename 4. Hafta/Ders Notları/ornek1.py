@@ -1,3 +1,5 @@
+# Araçların bilgileriin tutan bir sınıf oluşturalım.
+
 class Vehicle: # Parent Class oluşturulması
     def __init__(self, brand, model):
         self.brand = brand
