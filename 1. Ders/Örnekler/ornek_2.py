@@ -3,7 +3,7 @@ Bu örneğimizde, bir öğrencinin notlarını alan ve ortalamasını hesaplayan
 """
 
 # Öğrencinin notlarını alalım
-vize1 = int(input("1. Vize Notu: "))
+vize1 = int(input("1. Vize Notu: ")) # Burası bir yorum satırıdır
 vize2 = int(input("2. Vize Notu: "))
 final = int(input("Final Notu: "))
 

@@ -121,7 +121,7 @@ print(dict_ornek)  # Çıktı: {'İsim': 'Ali', 'Şehir': 'Ankara', 'Meslek': '�
 Koşullu ifadeler, belirli bir koşulun doğru olup olmadığını kontrol etmek için kullanılır. Python'da en yaygın kullanılan koşullu ifadeler `if`, `elif` ve `else` anahtar kelimeleri ile oluşturulur.
 
 ```python
-sayi = 10
+sayi = "10"
 if sayi > 0:
     print("Sayı pozitif.")
 elif sayi == 0:
