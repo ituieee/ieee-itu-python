@@ -7,41 +7,41 @@ class Kitap:
         self.yazar = yazar
         self.sayfa_sayısı = sayfa_sayısı
     
-    def __lt__(self, diğer):
+    def __lt__(self, other):
         """< operatörü: bu kitap daha mı kısa?"""
-        return self.sayfa_sayısı < diğer.sayfa_sayısı
+        return self.sayfa_sayısı < other.sayfa_sayısı
     
-    def __le__(self, diğer):
+    def __le__(self, other):
         """<= operatörü: bu kitap daha mı kısa veya eşit?"""
-        return self.sayfa_sayısı <= diğer.sayfa_sayısı
+        return self.sayfa_sayısı <= other.sayfa_sayısı
     
-    def __gt__(self, diğer):
+    def __gt__(self, other):
         """> operatörü: bu kitap daha mı uzun?"""
-        return self.sayfa_sayısı > diğer.sayfa_sayısı
+        return self.sayfa_sayısı > other.sayfa_sayısı
     
-    def __ge__(self, diğer):
+    def __ge__(self, other):
         """>= operatörü: bu kitap daha mı uzun veya eşit?"""
-        return self.sayfa_sayısı >= diğer.sayfa_sayısı
+        return self.sayfa_sayısı >= other.sayfa_sayısı
     
-    def __eq__(self, diğer):
+    def __eq__(self, other):
         """== operatörü: aynı sayı sayfaya mı sahip?"""
-        return self.sayfa_sayısı == diğer.sayfa_sayısı
+        return self.sayfa_sayısı == other.sayfa_sayısı
     
-    def __ne__(self, diğer):
+    def __ne__(self, other):
         """!= operatörü: farklı sayfa sayısına mı sahip?"""
-        return self.sayfa_sayısı != diğer.sayfa_sayısı
+        return self.sayfa_sayısı != other.sayfa_sayısı
     
-    def __add__(self, diğer):
+    def __add__(self, other):
         """+ operatörü: iki kitabın toplam sayfasını hesapla"""
-        if isinstance(diğer, Kitap):
-            toplam_sayfa = self.sayfa_sayısı + diğer.sayfa_sayısı
+        if isinstance(other, Kitap):
+            toplam_sayfa = self.sayfa_sayısı + other.sayfa_sayısı
             return f"Toplam {toplam_sayfa} sayfa"
         return None
     
-    def __sub__(self, diğer):
+    def __sub__(self, other):
         """- operatörü: iki kitab arasındaki sayfa farkı"""
-        if isinstance(diğer, Kitap):
-            fark = abs(self.sayfa_sayısı - diğer.sayfa_sayısı)
+        if isinstance(other, Kitap):
+            fark = abs(self.sayfa_sayısı - other.sayfa_sayısı)
             return f"{fark} sayfa fark"
         return None
     
